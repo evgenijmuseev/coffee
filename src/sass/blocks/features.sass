@@ -1,0 +1,23 @@
+.features
+    &-block
+        display: flex
+        justify-content: center
+        text-align: center
+    &-item
+        flex-basis: 23%
+        font-family: 'Kurale', serif
+        font-weight: 500
+        font-size: 1.5rem
+        color: $dark-color
+        text-transform: uppercase
+        &__title
+            margin-bottom: 10px
+            color: $gold-color
+@media (max-width: 576px)
+    .features
+        &-block
+            flex-direction: column
+            flex-wrap: wrap
+        &-item
+            flex-basis: 45%
+            margin-bottom: 30px

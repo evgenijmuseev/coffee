@@ -18,6 +18,10 @@ h1, h2, h3 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -57,6 +61,18 @@ img {
   text-align: center;
   font-weight: 700;
   font-family: "Kurale", serif;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  margin: 15px auto 30px auto;
+  height: 24px;
+  width: 189px;
+  background: url("../img/element.png") center center no-repeat;
+}
+
+section {
+  padding: 80px 0;
 }
 
 @media (max-width: 768px) {

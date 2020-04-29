@@ -1,0 +1,31 @@
+.gallery
+    &-slider
+        position: relative
+        display: flex
+        &__item
+            padding: 20px
+            img
+                max-width: 250px
+                max-height: 250px
+.prev
+    position: absolute
+    border: none
+    width: 32px
+    height: 32px
+    background: transparent url("../img/gallery/back.png")
+    left: -2%
+    top: 45%
+.next
+    position: absolute
+    border: none
+    width: 32px
+    height: 32px
+    background: transparent url("../img/gallery/next.png")
+    right: -2%
+    top: 45%
+
+@media (max-width: 576px)
+    .gallery
+        &-slider
+            &__item
+                padding: 70px

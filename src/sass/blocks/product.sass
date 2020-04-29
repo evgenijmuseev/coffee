@@ -1,0 +1,29 @@
+.product
+    background: url("../img/blog/blog-bg.jpg") center center no-repeat
+    background-size: cover
+    background-attachment: fixed
+    &-block
+        display: flex
+        justify-content: space-between
+        text-align: center
+    &-item
+        font-size: 1.25rem
+        &__title
+            margin-top: 20px
+            margin-bottom: 10px
+            font-family: 'Kurale', serif
+        &__price
+            color: $gold-color
+@media (max-width: 768px)
+    .product
+        &-block
+            flex-wrap: wrap
+        &-item
+            flex-basis: 45%
+            margin-bottom: 30px
+@media (max-width: 576px)
+    .product
+        &-block
+            justify-content: center
+        &-item
+            flex-basis: 80%
